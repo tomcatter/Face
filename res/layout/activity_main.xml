@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff6600"
+        android:gravity="center"
+        android:text="@string/publish_news"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:hint="@string/current_thinking"
+            android:maxLength="400"
+            android:paddingBottom="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="17sp" >
+        </EditText>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFace"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/liaotianshurubg" >
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:id="@+id/photo_jianpan"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sc_am_ok_default" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/RlFacePaneEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpagerEdit"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp" />
+
+            <com.example.face.IconPageIndicator
+                android:id="@+id/pager_indicatorEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/gvMoreEdit"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:numColumns="4"
+            android:verticalSpacing="10dp"
+            android:visibility="gone" >
+        </GridView>
+    </RelativeLayout>
+
+</LinearLayout>

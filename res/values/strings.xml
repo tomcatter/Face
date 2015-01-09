@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Face</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="publish_news">发布新动态</string>
+    <string name="current_thinking">这一刻的想法</string>
+
+</resources>
